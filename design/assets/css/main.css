@@ -1,0 +1,219 @@
+/* Aprendiendo css 
+
+colores FROM  coolors.co, color.adobe.com/es/create
+, flatuicolors.com, materialpalette.com, material.io
+'#CD5FE8,'#6573DB,'#8751F5,'#63B4F2,'#5FE8E8
+*/
+/*fuentes gratuitas: fonts.google.com*/
+/*animaciones: animate.css librerias   https://animate.style/*/
+html{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none ; /*decorar links*/
+    color: #ef32d9;
+}
+.title{
+ text-transform: capitalize; /*formato de mayuscula,minuscula, letras capitale,etc*/
+ text-align: center;
+}
+.title-item{
+    /*
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #63B4F2;
+   */
+   border-bottom:solid 2px #63B4F2;
+   padding-bottom: 1em;
+   font-size: 2em;
+   /*padding arriba,derecha,abajo,izquierda o  arriba/abajo  derecha/izq*/ 
+}
+.position{
+background-color:#CD5FE8 ;
+color: white;
+padding: 0.5em; /*shorthan propierties: se puede especificar cada lado o un solo valor para todos*/
+border-radius: 10px;
+margin-right: 0.5em;
+}
+.address{
+    font-weight: bold;
+    color: #642B73;
+    font-weight: 2.5em;
+    margin-top: 3em;
+    display: inline-block;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #6573DB;
+}
+.paragraph{
+    line-height: 1.8em;
+    font-weight: 300%;
+}
+.table{
+    width: 100%;
+    border-spacing:0;
+}
+/*dos selectores separadors por coma*/
+.table td,.table th{ 
+ padding:1em ; /*espacio*/
+ text-align: left;
+}
+/*psudoclases child(1) primer item, even-pares, odd impares */
+.table tr:nth-child(odd) {
+    background-color:#db9beb;
+}
+.red{
+height: 200px;
+width: 100px;
+background-color:#63B4F2;
+}
+.fa-star{
+    color:#f4f752 ;
+}
+#boton-pago{
+    background-color:#CD5FE8;
+}
+td{
+    border: 0;
+}
+/*gradient from https://uigradients.com*/
+.container{
+   background: #ef32d9;  /* fallback for old browsers respaldo*/
+   background: -webkit-linear-gradient(to right, #89fffd, #ef32d9);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #89fffd, #ef32d9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   height: 100vh; /*relativo al alto total del padre Body*/
+   display: flex; /*herramienta de diseño */
+   align-items: center;
+   justify-content: center;
+}
+/*posicionamiento de un contenedor*/
+/*juego flexboxfroggy.com*/
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.content{
+    padding: 1.0em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1)
+{
+font-size: 1.5em;  
+font-weight: bold;
+color:#ae0cd6e7 ; 
+}
+th{
+    display: none;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.close{
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color:#642B73 ;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+}
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+/*position  static, relative,absolute, fixed 
+
+ */ 
+ .contenedor-posicionado{
+     width: 800px;
+     height: 600px;
+     background: royalblue;
+    position: relative;
+ }
+.elemento{
+     background: red;
+     width: 200px;
+     height: 100px;
+     position: absolute; /*mueve el elemento top, left relative= al contenedor sticky
+      pegado al contenedor
+      */
+     top: 100px;
+     right: 200px;
+ }
+/*especificidad: precedencia, peso
+jerarquía: atributo style, etiqueta important (sobreescribe a las demás) 
+1. important, 2-style, 3-selectores: por ID (#), luego class (.), atributos y pseudoclases
+ y por ultimo tipo de elemento (div)
+*/
+/*pseduclases   con : sobre el elemento*/
+a:hover{ 
+    opacity: 0.8; /*del 0 al 100%*/
+}
+a:active{
+background: cornflowerblue;
+}
+a:focus{
+    background: royalblue;
+
+}
+@media(min-height:550px) {
+.content{
+    height: 500px;
+}
+}
+/*para pantallas mayores 900px*/
+@media(min-width:900px){
+th{
+display: table-cell;
+}
+td{
+width: auto;
+display: table-cell;
+}
+td:nth-of-type(1){
+font-size: 1em;
+}
+.content{
+    padding: 1.8em;
+}
+}
+    
+
+/*Unidades de medida
+ Absolutas y relativas
+ Absolutas: mismo valor
+ Pixeles(px),Centimetros(cm), Milimetros(mm), Picas(pc), Puntos(pt)
+ porcentaje: relativo al contenedor 600px (caja 50% = 300px)
+ ems= relativos al tamaño de la fuente (12px 2em= 24px)
+ ex= em (fuente del contedor, ) ex raiz del documento
+ vw 1% del ancho del viewport    vh
+ 
+ px casi siempre
+ relativas: em,% y vw 
+media query: propiedades condicionales 
+mobile first: prioridad sobre dispositivos
+*/
