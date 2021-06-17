@@ -28,7 +28,7 @@ links.forEach(function(lnk) {
      contn.classList.add("animated");
      setTimeout(function()
      {
-        location.href="/design";
+        location.href="../design";
      },600);
      
      return false; //deshabilita la función de click sobre las etiquetas de clase .close
