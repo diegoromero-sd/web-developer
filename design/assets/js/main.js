@@ -28,8 +28,8 @@ links.forEach(function(lnk) {
      contn.classList.add("animated");
      setTimeout(function()
      {
-         window.history.back();
-       // location.href="../design";
+         //window.history.back();
+       location.href="index.html";
      },600);
      
      return false; //deshabilita la función de click sobre las etiquetas de clase .close

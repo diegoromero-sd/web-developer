@@ -180,6 +180,9 @@ a:focus{
     background: royalblue;
 
 }
+i:hover{
+    color: #63B4F2;
+}
 @media(min-height:550px) {
 .content{
     height: 500px;
