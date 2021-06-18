@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=UTF-8/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Software de gestión operativa"
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Orange Software Solutions</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar nav-bar expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            class="d-inline-block align-top"
+            src="./assets/orange.png"
+            height="30"
+            width="30"
+            alt=""
+            loading="lazy"
+          />
+          Oragen ERP
+        </a>
+        <ul class="nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acercade.html">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="cover d-flex justify-content-end align-items-center flex-column"
+      >
+        <h1>
+          Orange ERP
+        </h1>
+        <p>Software Integrado de gestión empresarial</p>
+        <a href="acercade.html" class="btn btn-light" role="button">
+          Conoce mas
+        </a>
+      </div>
+    </header>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div class="cover cover-small">
+                <img class="cover-image" src="./assets/inventory.png" height="98%" width="98%" alt="inventarios" style="padding: 2px; border-radius: 5px; box-shadow: 0 5px 5px 0 rgba(219, 193, 160, 0.616);"/>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Inventarios</h5>
+                <p class="card-text">Controle eficientemente sus inventarios</p>
+                <a href="#" class="btn btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div class="cover cover-small">
+                <img class="cover-image" src="./assets/customer.png" height="98%" width="98%" alt="Clientes" style="padding: 2px; border-radius: 5px;" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Clientes</h5>
+                <p class="card-text">Facturación, cartera y clientes</p>
+                <a href="#" class="btn btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+            <div class="card">
+              <div class="cover cover-small">
+                <img class="cover-image" src="./assets/accounting.jpg" height="98%" width="98%" alt="Contabilidad" style="padding: 2px; border-radius: 5px;" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Contabilidad</h5>
+                <p class="card-text">Contabilidad Financiera</p>
+                <a href="#" class="btn btn-light">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-5">
+            <img
+              src="./assets/product_iteration.png"
+              width="150px"
+              heigth="150px"
+              alt="software"
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <h3>
+              Lorem ipsum
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              adipiscing commodo aliquet. Fusce bibendum orci magna, a
+              pellentesque augue posuere sed. Ut bibendum magna tincidunt velit
+              fermentum, eu laoreet arcu consectetur. Nullam nec enim sed justo
+              fermentum sagittis. Nam varius dapibus risus, quis consectetur
+              mauris. Praesent ut iaculis turpis. Phasellus congue tristique
+              ligula et consequat.
+            </p>
+          </div>
+        </div>
+        <form action="">
+          <label for="email">Correo Electrónico</label>
+          <div class="d-flex">
+            <div class="flex-fill mr-2">
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-dark">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 mb-5" id="products">
+        <div class="product-stripe">
+          <div class="stripe-container">
+            <div class="card">
+              <div class="cover cover-small" title="Producto 1">
+                <img src="./assets/pc.jpg" height="25%" width="25%" alt="Producto 1" style="padding: 2px; border-radius: 5px; float: left;" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Producto 1</h5>
+                <span class="badge badge-success">$2.500.000</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cover cover-small" title="Producto 2">
+               <img src="./assets/papers.jpg" height="25%" width="25%" alt="Producto 2" style="padding: 2px; border-radius: 5px; float:left;" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Producto 2</h5>
+                <span class="badge badge-success">$1.200.000</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cover cover-small" title="Producto 3">
+               <img src="./assets/dimmock.jpg" height="25%" width="25%" alt="Producto 3" style="padding: 2px; border-radius: 5px; float:left;" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Producto 3</h5>
+                <span class="badge badge-success">$3.000.000</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="cover cover-small" title="Producto 4">
+               <img src="./assets/account.jpg" height="25%" width="25%" alt="Producto 4" style="padding: 2px; border-radius: 5px; float:left;" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Producto 4</h5>
+                <span class="badge badge-success">$700.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="container mt-5 mb-5" id="mapa">
+      <h4>
+        Ubicación         
+      </h4>
+      <p>
+       Cra 19 Cl. 36 #191, Bucaramanga, Santander
+      </p>
+      <div class="responsive-iframe">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d989.7634489780211!2d-73.12282786701584!3d7.119764522704682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fd821722899%3A0x37b8ffd3e3030fa8!2sParque%20Santander!5e0!3m2!1ses-419!2sco!4v1592490715052!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>  
+      </div>
+      
+    </div>
+    </section>
+  </body>
+</html>
